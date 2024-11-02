@@ -4333,11 +4333,12 @@ input[type=button].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #f4623a;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
+
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -10148,10 +10149,9 @@ display: inline-block;*/
 
 .card {
   margin: 20px auto;
-  width: 300px;
-  height: 120px;
-  border-radius: 40px;
-/*box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);*/
+  width: 250px;
+  height: 100px;
+  border-radius: 15px;
   cursor: pointer;
   transition: 0.4s;
 }
@@ -10169,24 +10169,23 @@ display: inline-block;*/
   object-fit: cover;
 }
 
-.card .card_title {
+.card_title {
   text-align: center;
-  border-radius: 0px 0px 40px 40px;
   font-family: sans-serif;
   font-weight: bold;
   font-size: 16px;
-  margin-top: -90px;
-  height: 20px;
+  /* Ensure the text is always in the center vertically and horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
 }
 
 .card:hover {
   transform: scale(0.9, 0.9);
   box-shadow: 1px 1px 6px 3px rgba(0,0,0,0.05), 
     -5px -5px 30px 15px rgba(0,0,0,0.22);
-}
-
-.title-white {
-  color: white;
 }
 
 .title-black {
